@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>My To Do List
+    <title>My Task</title>
+</head>
+<link rel="stylesheet" href="To_do_list.css">
+
+<body>
+    <script src="To_do_list.js"></script>
+    <div class="title"><span>Sign Up</span></div>
+    <h1>Enter Your Name</h1>
+
+    <input id="name" type="text">
+    <button type="button" onclick="EnterName()">Submit</button>
+    <p style="color:rgb(68, 149, 187)" id="login"></p>
+    <script>
+        function EnterName() {
+            let x = document.getElementById("name").value;
+            document.getElementById("login").innerHTML =
+                "Welcome " + x + "!!";
+        }    
+    </script>
+    </div>
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myUL">
+        <li>Hit the gym</li>
+        <li class="checked">Pay bills</li>
+        <li>Meet Friends</li>
+        <li>Buy eggs</li>
+        <li>Read a book</li>
+        <li>Organize office</li>
+    </ul>
+</body>
+
+</html>
